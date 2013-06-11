@@ -29,6 +29,7 @@ pengxiulin.github.com
    /2013/(按时间存储)
    /static/(img,script,skin)
    /s/ service
+   /u/
 
 
 ## 存储结构设计
@@ -40,4 +41,4 @@ pengxiulin.github.com
 3. articleHistory
 
 4. user
-
+   id,username,pwd,website(blog/personal website/微博),avator
