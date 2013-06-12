@@ -30,8 +30,13 @@
 .colorG5(){color:#504c41;}
 .bgcolorG5(){background-color:#504c41;}
 .colorA(){color:#fff;}
+.bgcolorA(){background-color:#fff;}
 @color-bg:#282619;
 
+
+.font-title(){
+    font-family:"Microsoft Yahei","黑体",sans-serif;
+}
 
 
 @font-face {
@@ -134,8 +139,57 @@ body{
 }
 .page-content{
     .layout;
+    hgroup{
+        margin-top:100px;
+        h2{
+            margin:0;
+            font:24px/150% "Microsoft Yahei","黑体",sans-serif;
+            .colorY;
+        }
+        h3{
+            margin:0;
+            font:14px/150% "黑体";
+            .colorG5;
+        }
+    }
     .main{
         .layout-left(770px);
+        .articles{
+            .bgcolorA;
+            border-radius:5px;
+            margin-left:65px;
+            article{
+                header{
+                    position:relative;
+                    h2{
+                        margin:0;
+                        padding:20px 0 0 20px;
+                        .font-title;
+                        .colorG5;
+                        font-size:16px;
+                    }
+                    time{
+                        position:absolute;
+                        left:-65px;
+                        width:50px;
+                        .bgcolorG5;
+                        text-align:center;
+                        border-radius:5px;
+                        .month{
+                            display:block;
+                            .colorA;
+                            .bgcolorY;
+                            border-top-left-radius:5px;
+                            border-top-right-radius:5px;
+                        }
+                        .day{
+                            display:block;
+                            .colorA;
+                        }
+                    }
+                }
+            }
+        }
     }
     aside{
         .layout-right(210px);
