@@ -27,8 +27,10 @@
 .colorY(){color:#ffd200;}
 .bgcolorY(){background-color:#ffd200;}
 .colorG(){color:#787465;}
+.bgcolorG(){background-color:#787465;}
 .colorG5(){color:#504c41;}
 .bgcolorG5(){background-color:#504c41;}
+.colorB(){color:#18150d;}
 .colorA(){color:#fff;}
 .bgcolorA(){background-color:#fff;}
 @color-bg:#282619;
@@ -162,8 +164,8 @@ body{
                 header{
                     position:relative;
                     h2{
-                        margin:0;
-                        padding:20px 0 0 20px;
+                        margin:0 0 10px 20px;
+                        padding-top:20px;
                         .font-title;
                         .colorG5;
                         font-size:16px;
@@ -178,12 +180,26 @@ body{
                         .month{
                             display:block;
                             .colorA;
-                            .bgcolorY;
-                            border-top-left-radius:5px;
-                            border-top-right-radius:5px;
+                            padding:2px;
                         }
                         .day{
                             display:block;
+                            .colorB;
+                            font-weight:bold;
+                            padding:5px;
+                            .bgcolorY;
+                            border-bottom-left-radius:5px;
+                            border-bottom-right-radius:5px;
+                        }
+                    }
+                    .category{
+                        .bgcolorG5;
+                        .colorY;
+                        display:inline-block;
+                        border-top-right-radius:5px;
+                        border-bottom-right-radius:5px;
+                        padding:5px 20px;
+                        a:link,a:visited{
                             .colorA;
                         }
                     }
