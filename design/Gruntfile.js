@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 		less: {
 			compile: {
 				files: {
-					'skin/veryless.css': 'skin/veryless.less'
+					'skin/page.css': 'skin/page.less'
 				}
 			}
 		},

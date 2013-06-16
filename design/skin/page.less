@@ -180,18 +180,23 @@ body{
                         border-radius:5px;
                         .month{
                             display:block;
-                            .colorB;
-                            font-weight:bold;
-                            padding:5px;
-                            .bgcolorY;
-                            border-top-left-radius:5px;
-                            border-top-right-radius:5px;
+                            .colorA;
+                            width:100%;
+                            position:absolute;
+                            top:30px;
                         }
                         .day{
                             position:absolute;
+                            top:0;
                             display:block;
-                            .colorA;
-                            padding:2px;
+                            .colorB;
+                            .bgcolorY;
+                            font-weight:bold;
+                            width:100%;
+                            height:28px;
+                            line-height:28px;
+                            border-top-left-radius:5px;
+                            border-top-right-radius:5px;
                         }
                     }
                     .category{
@@ -203,6 +208,62 @@ body{
                         padding:5px 20px;
                         a:link,a:visited{
                             .colorA;
+                        }
+                        position:relative;
+                        z-index:2;
+                    }
+                    .poster{
+                        .bgcolorY;
+                        position:relative;
+                        height:110px;
+                        top:-15px;
+                        margin-bottom:80px;
+                        .w{
+                            padding:34px 27px 0 27px;
+                            .w2{
+                                border-radius:10px;
+                                height:150px;
+                                overflow:hidden;
+                                img{
+                                    position:relative;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                .content{
+                    .colorG5;
+                    margin:20px;
+                    p{
+                        text-indent:2em;
+                    }
+                }
+                footer{
+                    width:auto;
+                    position:relative;
+                    .share{
+                        ul{
+                            border-top:1px dashed #eee;
+                            border-bottom:1px dashed #504c41;
+                            overflow:hidden;
+                            list-style:none;
+                            margin:5px;
+                            padding:0;
+                            li{
+                                float:left;
+                                margin:5px;
+                            }
+                        }
+                    }
+                    .more{
+                        position:absolute;
+                        right:10px;
+                        bottom:10px;
+                        a:link,a:visited{
+                            .colorG5;
+                            font-weight:bold;
+                            text-decoration:none;
                         }
                     }
                 }
