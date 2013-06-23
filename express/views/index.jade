@@ -1,7 +1,36 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  em ok了
-  
+    div.progress
+        progress(value="100",max="100") content
+    header.page-header
+        .logo
+            h1.h1
+                a(href="xiulin.info") xiulin.info
+            h3 Another frontee blog
+    .page-content
+        .main
+            .articles
+                article
+                    header
+                        h2
+                            a(href="#") Initial Post
+                        time(datetime="2013-04-09")
+                            span.month 4月
+                            span.day 19日
+                        .category Category:
+                            a(href="#") CSS
+                        .poster
+                            .w
+                                .w2
+                                    a
+                    .content
+                        p While HTML5 has a bunch of semantic elements, including new ones like &lt;article&gt; and &lt;nav&gt;, sometimes there just isn’t an element with the right meaning. What we want are ways to extend what we’ve got, to add extra semantics that are machine-readable — data that a browser, script, or robot can use.
+                    footer
+                        .share
+                            ul
+                                li
+                                    a(href="#")
+                                        img(src="img/share/weibo.png",width="35",height="35")
+                        .more
+                            a(href="#") 展开阅读全部 &gt;&gt;
