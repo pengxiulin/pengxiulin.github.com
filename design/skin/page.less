@@ -61,6 +61,7 @@ body{
     .logo{
         float:left;
         position:relative;
+        left:30px;
         width:200px;
         height:64px;
         &:before,&:after{
@@ -111,6 +112,7 @@ body{
         }
     }
     nav{
+        display:none;
         float:right;
         ul{
             list-style:none;
@@ -157,6 +159,7 @@ body{
     .main{
         .layout-left(770px);
         .articles{
+            margin-top:20px;
             .bgcolorA;
             border-radius:5px;
             margin-left:65px;
@@ -165,11 +168,19 @@ body{
                 header{
                     position:relative;
                     h2{
-                        margin:0 0 10px 20px;
+                        margin:0 0 0 20px;
                         padding-top:20px;
+                        padding-bottom:10px;
                         .font-title;
-                        .colorG5;
                         font-size:16px;
+                        a:link,a:visited{
+                            display:block;
+                            .colorG5;
+                            text-decoration:none;
+                        }
+                        a:hover{
+                            text-decoration:underline;
+                        }
                     }
                     time{
                         position:absolute;
@@ -204,6 +215,8 @@ body{
                         .bgcolorG5;
                         .colorY;
                         display:inline-block;
+                        margin-bottom:-10px;
+                        display:none;
                         border-top-right-radius:5px;
                         border-bottom-right-radius:5px;
                         padding:5px 20px;
@@ -214,10 +227,9 @@ body{
                         z-index:2;
                     }
                     .poster{
+                        display:none;
                         .bgcolorY;
-                        position:relative;
                         height:110px;
-                        top:-15px;
                         margin-bottom:80px;
                         .w{
                             padding:34px 27px 0 27px;
@@ -248,7 +260,7 @@ body{
                     .share{
                         ul{
                             border-top:1px dashed #eee;
-                            border-bottom:1px dashed #504c41;
+                            border-bottom:1px solid #504c41;
                             overflow:hidden;
                             list-style:none;
                             margin:5px;
@@ -271,8 +283,33 @@ body{
                     }
                 }
             }
+            article:last-child{
+                .share ul{
+                    border-bottom:0;
+                }
+            }
             .pagin{
                 margin:10px;
+                span{
+                    cursor:default;
+                    &.curr{
+                        .bgcolorY;
+                        .colorG5;
+                        font-weight:bold;
+                        padding:5px 10px;
+                        border-radius:3px;
+                    }
+                }
+                a:link,a:visited{
+                    .colorA;
+                    .bgcolorG5;
+                    padding:5px 10px;
+                    border-radius:3px;
+                    text-decoration:none;
+                    &:hover{
+                        .bgcolorY;
+                    }
+                }
             }
         }
     }
